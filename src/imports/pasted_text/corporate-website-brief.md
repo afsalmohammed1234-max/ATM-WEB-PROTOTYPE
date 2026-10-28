@@ -1,8 +1,8 @@
-Design a premium, modern, responsive corporate website for a food-tech company called **ANY TIME MAVU**.
+Design a premium, modern, responsive corporate website for a food-tech company called **ANY TIME MAAVU**.
 
-### COMPANY
+The website should look like a real, high-end, professional commercial food-tech brand, not a generic template.
 
-Any Time Mavu develops innovative **batter dispensing machines** designed for commercial kitchens and food businesses. The machine helps businesses dispense idli and dosa batter in a more hygienic, consistent, efficient and convenient way.
+Any Time Maavu develops innovative **batter dispensing machines** designed for commercial kitchens and food businesses. The machine helps businesses dispense idli and dosa batter in a more hygienic, consistent, efficient and convenient way.
 
 The brand should feel like a **modern food-technology and commercial kitchen equipment company**, NOT like a restaurant or traditional food brand.
 
@@ -44,7 +44,7 @@ Use a strong visual hierarchy with generous whitespace.
 
 ### COLOR PALETTE
 
-Use the existing Any Time Mavu brand identity as inspiration.
+Use the existing Any Time Maavu brand identity as inspiration.
 
 Primary: Deep navy / dark blue
 Secondary: Teal / cyan
@@ -73,7 +73,7 @@ Create a visually impressive homepage with the following sections.
 ## 1. NAVIGATION
 
 Logo:
-ANY TIME MAVU
+ANY TIME MAAVU
 
 Navigation:
 
@@ -112,7 +112,7 @@ Primary CTA:
 Secondary CTA:
 **EXPLORE THE MACHINE**
 
-Place a large, high-quality product image/mockup of the Any Time Mavu batter dispensing machine prominently in the hero.
+Place a large, high-quality product image/mockup of the Any Time Maavu batter dispensing machine prominently in the hero.
 
 The machine should be the visual focal point.
 
@@ -163,7 +163,7 @@ Use a visually engaging layout rather than a plain list.
 
 Heading:
 
-**MEET ANY TIME MAVU**
+**MEET ANY TIME MAAVU**
 
 Supporting copy:
 
@@ -214,7 +214,7 @@ Use a clean horizontal process layout on desktop and vertical layout on mobile.
 
 ---
 
-## 7. WHY ANY TIME MAVU
+## 7. WHY ANY TIME MAAVU
 
 Heading:
 
@@ -325,7 +325,7 @@ Messy workflow
 ↓
 More repetitive work
 
-### WITH ANY TIME MAVU
+### WITH ANY TIME MAAVU
 
 Controlled dispensing
 ↓
@@ -377,7 +377,7 @@ Create an accordion-style FAQ section.
 
 Questions should include:
 
-What is Any Time Mavu?
+What is Any Time Maavu?
 
 Who can use the machine?
 
@@ -405,7 +405,7 @@ Headline:
 
 Supporting text:
 
-**Talk to our team and discover how Any Time Mavu can improve your batter handling process.**
+**Talk to our team and discover how Any Time Maavu can improve your batter handling process.**
 
 Buttons:
 
@@ -450,7 +450,7 @@ Use placeholders for contact details.
 
 Create a clean professional footer.
 
-ANY TIME MAVU
+ANY TIME MAAVU
 
 Navigation:
 Home
@@ -473,7 +473,7 @@ LinkedIn
 YouTube
 
 Add:
-© 2026 Any Time Mavu. All Rights Reserved.
+© 2026 Any Time Maavu. All Rights Reserved.
 
 ---
 
@@ -515,7 +515,7 @@ Instead make it feel like:
 
 **FOOD TECHNOLOGY × MODERN INDUSTRIAL DESIGN × PREMIUM B2B BRAND**
 
-Use the actual Any Time Mavu logo and product photographs when provided.
+Use the actual Any Time Maavu logo and product photographs when provided.
 
 Do not generate fake technical specifications.
 

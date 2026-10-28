@@ -1,161 +1,259 @@
-import { MachineSpec, FAQItem, ApplicationItem } from '../types';
+import { MachineSpec, FAQItem, ApplicationItem } from "../types"
 
 export const COMPANY_INFO = {
-  name: 'ANY TIME MAVU',
-  tagline: 'Smart Batter Dispensing for Modern Kitchens',
-  description: 'Developing hygienic, consistent, and efficient batter dispensing machines for commercial kitchens and food businesses.',
-  phonePlaceholder: '+91 84280 46662',
-  whatsappPlaceholder: '+91 84280 46662',
-  emailPlaceholder: 'sales@anytimemavu.com',
-  supportEmail: 'support@anytimemavu.com',
-  addressPlaceholder: 'Plot No. 42, Food Tech Industrial Zone, Chennai, Tamil Nadu - 600001, India',
-  productName: 'Any Time Mavu Commercial Batter Dispensing Machine',
+  name: "ANY TIME MAAVU",
+  tagline: "Smart Batter Dispensing & Packaging Solutions",
+  description:
+    "ANY TIME MAAVU brings automation to the batter-selling business with smart dispensing and packaging machines designed to deliver accurate quantities, hygienic packaging, and a seamless customer experience.",
+  phonePlaceholder: "+91 99409 65032",
+  whatsappPlaceholder: "+91 99409 65032",
+  emailPlaceholder: "sales@anytimemaavu.com",
+  supportEmail: "support@anytimemaavu.com",
+  addressPlaceholder:
+    "Plot No. 42, Food Tech Industrial Zone, Chennai, Tamil Nadu - 600001, India",
+  productName: "ANY TIME MAAVU Batter Dispensing & Packaging Machine",
   social: {
-    instagram: 'https://instagram.com/anytimemavu',
-    facebook: 'https://facebook.com/anytimemavu',
-    linkedin: 'https://linkedin.com/company/anytimemavu',
-    youtube: 'https://youtube.com/@anytimemavu',
-  }
-};
+    instagram: "https://instagram.com/anytimemaavu",
+    facebook: "https://facebook.com/anytimemaavu",
+    linkedin: "https://linkedin.com/company/anytimemaavu",
+    youtube: "https://youtube.com/@anytimemaavu",
+  },
+}
 
 export const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/about' },
-  { label: 'Our Machine', href: '/machine' },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Applications', href: '/applications' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'FAQ', href: '/faq' },
-  { label: 'Contact', href: '/contact' },
-];
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Machine", href: "/machine" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Contact", href: "/contact" },
+]
 
 export const VALUE_PROPOSITIONS = [
   {
-    title: 'HYGIENIC',
-    description: 'Enclosed dispenser minimizes contact and airborne contamination in bustling commercial kitchens.',
-    iconName: 'hygiene',
+    title: "ACCURATE DISPENSING",
+    description:
+      "Dispense consistent quantities with better control and reduced wastage.",
+    iconName: "consistency",
   },
   {
-    title: 'CONSISTENT',
-    description: 'Uniform portioning ensures every single idli and dosa is identical in weight and texture.',
-    iconName: 'consistency',
+    title: "HYGIENIC PACKAGING",
+    description:
+      "Minimize manual handling and maintain a cleaner, sealed packaging process.",
+    iconName: "hygiene",
   },
   {
-    title: 'EFFICIENT',
-    description: 'Eliminates messy ladling, speeds up griddle service, and cuts kitchen prep hours in half.',
-    iconName: 'efficiency',
+    title: "FAST & CONVENIENT",
+    description:
+      "Speed up the process of preparing customer orders during peak hours.",
+    iconName: "efficiency",
   },
   {
-    title: 'EASY TO USE',
-    description: 'Intuitive single-touch or knob operation with quick-disassembly parts for simple end-of-day wash.',
-    iconName: 'easyUse',
+    title: "EASY OPERATION",
+    description:
+      "Designed for simple, practical day-to-day operation with minimal staff training.",
+    iconName: "easyUse",
   },
-];
+]
 
 export const MACHINE_SPECS: MachineSpec[] = [
-  { label: 'Hopper Capacity', value: '[ADD SPECIFICATION — e.g. 15 Liters / 25 Liters]', category: 'Capacity', isPlaceholder: true },
-  { label: 'Dispensing Range', value: '[ADD SPECIFICATION — e.g. 40ml – 180ml per cycle]', category: 'General', isPlaceholder: true },
-  { label: 'Dispensing Speed', value: '[ADD SPECIFICATION — e.g. Up to 60 portions / minute]', category: 'General', isPlaceholder: true },
-  { label: 'Compatible Batters', value: 'Idli Batter, Dosa Batter, Vada / Paniyaram Batter', category: 'General', isPlaceholder: false },
-  { label: 'Power Supply', value: '[ADD SPECIFICATION — e.g. 220V AC, 50Hz, Single Phase]', category: 'Electrical', isPlaceholder: true },
-  { label: 'Power Consumption', value: '[ADD SPECIFICATION — e.g. 150 Watts Eco-Drive]', category: 'Electrical', isPlaceholder: true },
-  { label: 'Material Construction', value: 'Food-Grade 304 Stainless Steel (SS304) Contact Parts', category: 'Physical', isPlaceholder: false },
-  { label: 'Dimensions (W × D × H)', value: '[ADD SPECIFICATION — e.g. 350 × 420 × 650 mm]', category: 'Physical', isPlaceholder: true },
-  { label: 'Machine Weight', value: '[ADD SPECIFICATION — e.g. 18 kg]', category: 'Physical', isPlaceholder: true },
-  { label: 'Cleaning Time', value: 'Under 5 minutes (Quick-release modular parts)', category: 'General', isPlaceholder: false },
-  { label: 'Warranty', value: '[ADD SPECIFICATION — e.g. 1 Year Comprehensive Commercial Warranty]', category: 'General', isPlaceholder: true },
-];
+  {
+    label: "Hopper Capacity",
+    value: "[ADD SPECIFICATION — e.g. 15 Liters / 25 Liters]",
+    category: "Capacity",
+    isPlaceholder: true,
+  },
+  {
+    label: "Dispensing Range",
+    value: "[ADD SPECIFICATION — e.g. 250ml – 1000ml per pack]",
+    category: "General",
+    isPlaceholder: true,
+  },
+  {
+    label: "Dispensing Speed",
+    value: "[ADD SPECIFICATION — e.g. Up to 15 packs / minute]",
+    category: "General",
+    isPlaceholder: true,
+  },
+  {
+    label: "Compatible Batters",
+    value: "Fresh Dosa Batter, Idli Batter, Multigrain / Millet Batter",
+    category: "General",
+    isPlaceholder: false,
+  },
+  {
+    label: "Power Supply",
+    value: "[ADD SPECIFICATION — e.g. 220V AC, 50Hz, Single Phase]",
+    category: "Electrical",
+    isPlaceholder: true,
+  },
+  {
+    label: "Power Consumption",
+    value: "[ADD SPECIFICATION — e.g. 150 Watts Eco-Drive]",
+    category: "Electrical",
+    isPlaceholder: true,
+  },
+  {
+    label: "Material Construction",
+    value: "Food-Grade 304 Stainless Steel (SS304) Contact Parts",
+    category: "Physical",
+    isPlaceholder: false,
+  },
+  {
+    label: "Dimensions (W × D × H)",
+    value: "[ADD SPECIFICATION — e.g. 380 × 450 × 720 mm]",
+    category: "Physical",
+    isPlaceholder: true,
+  },
+  {
+    label: "Machine Weight",
+    value: "[ADD SPECIFICATION — e.g. 22 kg]",
+    category: "Physical",
+    isPlaceholder: true,
+  },
+  {
+    label: "Cleaning Time",
+    value: "Under 5 minutes (Quick-release modular parts)",
+    category: "General",
+    isPlaceholder: false,
+  },
+  {
+    label: "Warranty",
+    value:
+      "[ADD SPECIFICATION — e.g. 1 Year Comprehensive Commercial Warranty]",
+    category: "General",
+    isPlaceholder: true,
+  },
+]
 
 export const APPLICATIONS: ApplicationItem[] = [
   {
-    id: 'hotels',
-    title: 'Hotels & Breakfast Buffets',
-    description: 'Keep up with high-pressure breakfast rushes. Deliver pristine, identical idlis and dosas to guests every morning.',
-    benefits: ['Rapid breakfast service', 'Zero dripping on buffet counters', 'Standardized presentation'],
-    imagePlaceholderText: 'Commercial Hotel Kitchen Setup',
-    unsplashId: '1582719478250-c89cae4dc85b',
+    id: "retail-stores",
+    title: "Batter Retail Stores",
+    description:
+      "Make customer orders faster and more consistent. Eliminate ladle drips and provide clean, standardized batter packs on demand.",
+    benefits: [
+      "Faster customer order fulfillment",
+      "Consistent portion and pack weight",
+      "Clean, modern counter presentation",
+    ],
+    imagePlaceholderText: "Fresh Batter Retail Store Counter",
+    unsplashId: "1555396273-367ea4eb4db5",
   },
   {
-    id: 'restaurants',
-    title: 'Idli & Dosa Restaurants',
-    description: 'Designed specifically for high-turnover South Indian restaurants where chef speed and consistency are vital.',
-    benefits: ['Cuts chef wrist fatigue', 'Uniform thickness and diameter', 'Speed during peak lunch & dinner'],
-    imagePlaceholderText: 'Restaurant Tawa & Batter Prep',
-    unsplashId: '1555396273-367ea4eb4db5',
+    id: "production-units",
+    title: "Batter Production Units",
+    description:
+      "Improve the efficiency of your packaging workflow. Automate filling into containers or pouches with minimal manual intervention.",
+    benefits: [
+      "Streamlined packaging workflow",
+      "Substantially reduced manual handling",
+      "High repeatability across batches",
+    ],
+    imagePlaceholderText: "Batter Production & Packaging Line",
+    unsplashId: "1581092160607-ee22621dd758",
   },
   {
-    id: 'catering',
-    title: 'Catering Businesses',
-    description: 'Feed hundreds or thousands of wedding and banquet guests without batter spillage or erratic portion counts.',
-    benefits: ['Accurate inventory planning', 'Mobile and easy to transport', 'Hygienic open-counter presentation'],
-    imagePlaceholderText: 'Large Event Banquet Catering',
-    unsplashId: '1511795409834-ef04bbd61622',
+    id: "supermarkets",
+    title: "Supermarkets & Retail Counters",
+    description:
+      "Create a convenient fresh-batter dispensing experience right inside retail supermarkets and grocery departments.",
+    benefits: [
+      "Live fresh-batter dispensing",
+      "Zero spillage or messy counters",
+      "Attracts foot-traffic with hygiene",
+    ],
+    imagePlaceholderText: "Supermarket Fresh Food Section",
+    unsplashId: "1582719478250-c89cae4dc85b",
   },
   {
-    id: 'cloud-kitchens',
-    title: 'Cloud Kitchens',
-    description: 'Maximize small footprints and high order volumes for Swiggy/Zomato breakfast deliveries.',
-    benefits: ['Compact counter footprint', 'Consistent product packaging weight', 'Reduced staffing overhead'],
-    imagePlaceholderText: 'Modern Fast Cloud Kitchen',
-    unsplashId: '1556910103-1c02745aae4d',
+    id: "vending-points",
+    title: "Batter Vending Points",
+    description:
+      "Enable automated customer-facing batter dispensing. Allow customers to select quantity and receive freshly packed batter quickly.",
+    benefits: [
+      "Automated portion dispensing",
+      "Quick customer turnaround",
+      "Ideal for high-density residential kiosks",
+    ],
+    imagePlaceholderText: "Automated Food Vending Counter",
+    unsplashId: "1556910103-1c02745aae4d",
   },
   {
-    id: 'messes',
-    title: 'Hostel & Institutional Messes',
-    description: 'Serve thousands of students and factory workers on strict daily meal schedules reliably.',
-    benefits: ['Heavy-duty continuous run', 'Eliminates wastage from over-ladling', 'Tough stainless steel build'],
-    imagePlaceholderText: 'Bulk Mess & Canteen Facility',
-    unsplashId: '1577106263724-2c8e03bfe9cf',
+    id: "growing-brands",
+    title: "Growing Batter Brands",
+    description:
+      "Build a scalable and standardized selling process across retail franchises and regional distribution outlets.",
+    benefits: [
+      "Standardized brand customer experience",
+      "Consistent product packaging quality",
+      "Easy operational replication",
+    ],
+    imagePlaceholderText: "Multi-outlet Commercial Kitchens",
+    unsplashId: "1511795409834-ef04bbd61622",
   },
   {
-    id: 'food-production',
-    title: 'Commercial Food Production',
-    description: 'For central commissary units supplying batter or ready-to-cook idlis at industrial scale.',
-    benefits: ['Seamless integration into line production', 'High repeatability', 'Full food-grade hygiene'],
-    imagePlaceholderText: 'Food Processing & Production Line',
-    unsplashId: '1581092160607-ee22621dd758',
+    id: "commercial-kitchens",
+    title: "Commercial Food Outlets",
+    description:
+      "Suitable for restaurants, catering hubs, and commissaries seeking standardized batter portioning for daily prep.",
+    benefits: [
+      "Accurate dispensing and reduced wastage",
+      "Quick staff operation",
+      "Robust SS304 construction",
+    ],
+    imagePlaceholderText: "Central Preparation Kitchen",
+    unsplashId: "1577106263724-2c8e03bfe9cf",
   },
-];
+]
 
 export const FAQS: FAQItem[] = [
   {
-    question: 'What is Any Time Mavu?',
-    answer: 'Any Time Mavu is a food-technology company engineering hygienic, precision batter dispensing machines for commercial kitchens. Our flagship machine replaces messy, manual ladles with controlled, hygienic dispensing of idli and dosa batter.',
-    category: 'Product',
+    question: "What is ANY TIME MAAVU?",
+    answer:
+      "ANY TIME MAAVU develops and provides smart batter dispensing and packaging machines designed specifically for businesses that sell fresh dosa and idli batter. Our machines automate the process of dispensing accurate quantities and packaging batter hygienically and consistently.",
+    category: "Product",
   },
   {
-    question: 'Who can benefit most from this machine?',
-    answer: 'The machine is purpose-built for commercial food operations of all sizes: hotels, idli & dosa restaurants, catering businesses, cloud kitchens, hostel messes, and food production units.',
-    category: 'Commercial',
+    question: "Who is the ANY TIME MAAVU machine built for?",
+    answer:
+      "The machine is designed for businesses that sell fresh batter: batter retail stores, commercial batter production units, supermarkets & grocery counters, automated batter vending points, and expanding batter brands.",
+    category: "Commercial",
   },
   {
-    question: 'What types of batter can be dispensed?',
-    answer: 'The machine handles conventional fermented idli and dosa batter with high consistency. It is engineered to maintain batter aeration and texture without breaking the fermentation structure.',
-    category: 'Product',
+    question: "What does the machine do?",
+    answer:
+      "The machine allows an operator or customer to: 1. Load prepared batter into the storage system, 2. Select the required quantity, 3. Dispense an accurate quantity of batter, 4. Automatically fill into a container or pouch, and 5. Provide a hygienic, ready-to-sell pack to the customer.",
+    category: "Product",
   },
   {
-    question: 'How does the dispensing mechanism work?',
-    answer: 'The machine utilizes a sanitary, food-grade positive displacement valve system. You select the desired portion size, and with a single press, it dispenses the exact volume directly onto the tawa or idli plate.',
-    category: 'Product',
+    question: "How does it improve over traditional manual measuring?",
+    answer:
+      "Traditional manual measuring involves repeated handling, variable quantities, slower customer service, higher spillage, and fatigue during peak hours. ANY TIME MAAVU delivers controlled dispensing, consistent quantities, hygienic handling, faster service, and reduced wastage.",
+    category: "Product",
   },
   {
-    question: 'Is the machine easy to clean at the end of the shift?',
-    answer: 'Yes. All contact parts are designed for tool-less disassembly in under 60 seconds. Components are made of Food-Grade 304 Stainless Steel and food-safe polymers that can be washed under standard kitchen tap water.',
-    category: 'Hygiene',
+    question: "Is the machine easy to operate and clean?",
+    answer:
+      "Yes. The machine is engineered for simple, practical day-to-day operation. All contact surfaces are made of Food-Grade 304 Stainless Steel and feature quick-release modular parts that can be disassembled and cleaned in under 5 minutes without tools.",
+    category: "Hygiene",
   },
   {
-    question: 'How does this machine save money for my kitchen?',
-    answer: 'Commercial kitchens typically lose 8% to 15% of batter to ladle drips, over-portioning, and bottom residue. Any Time Mavu guarantees exact portion control, prevents counter spills, and saves up to 2 hours of labor per shift.',
-    category: 'Commercial',
+    question: "How does ANY TIME MAAVU help scale a batter business?",
+    answer:
+      "By standardizing quantity control and packaging speed, ANY TIME MAAVU helps businesses fulfill customer orders faster, eliminate wastage, and maintain consistent quality across multiple outlets or retail counters.",
+    category: "Commercial",
   },
   {
-    question: 'How can I request a quotation or a live demonstration?',
-    answer: 'You can submit the enquiry form on our website, click our direct WhatsApp button, or call our team. We provide customized quotes based on your daily kitchen volume and requirements.',
-    category: 'Purchase',
+    question: "How can our business get the machine or request a demo?",
+    answer:
+      "You can submit the enquiry form on our website, connect directly with us on WhatsApp, or call our sales hotline. Our team will provide a tailored quote and arrange an operational demonstration.",
+    category: "Purchase",
   },
   {
-    question: 'What warranty and after-sales support do you provide?',
-    answer: 'Every Any Time Mavu machine comes with our standard commercial warranty covering parts and service support. We also provide initial kitchen staff training and readily available spare parts.',
-    category: 'Purchase',
+    question: "What after-sales and warranty support is provided?",
+    answer:
+      "Every ANY TIME MAAVU machine comes with comprehensive warranty coverage, staff operating guidance, and reliable technical support to ensure uninterrupted daily business operations.",
+    category: "Purchase",
   },
-];
+]

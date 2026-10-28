@@ -1,5 +1,5 @@
 -- ==============================================================================
--- ANY TIME MAVU: Supabase Database Setup Script
+-- ANY TIME MAAVU: Supabase Database Setup Script
 -- Run this in your Supabase SQL Editor (https://supabase.com/dashboard/project/_/sql)
 -- ==============================================================================
 
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS public.enquiries (
     city TEXT NOT NULL,
     business_type TEXT NOT NULL,
     enquiry_type TEXT NOT NULL DEFAULT 'quote',
-    product TEXT DEFAULT 'Any Time Mavu Batter Dispensing Machine',
+    product TEXT DEFAULT 'ANY TIME MAAVU Batter Dispensing & Packaging Machine',
     message TEXT,
     status TEXT NOT NULL DEFAULT 'new' CHECK (status IN ('new', 'contacted', 'interested', 'converted', 'closed'))
 );

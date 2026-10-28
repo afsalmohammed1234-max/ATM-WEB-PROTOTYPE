@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { COMPANY_INFO } from '../../lib/constants';
-import { IconWhatsApp } from './Icons';
+import React, { useState } from "react"
+import { COMPANY_INFO } from "../../lib/constants"
+import { IconWhatsApp } from "./Icons"
 
 export function WhatsAppFloating() {
-  const [hovered, setHovered] = useState(false);
-  const cleanNumber = COMPANY_INFO.whatsappPlaceholder.replace(/[^0-9]/g, '');
+  const [hovered, setHovered] = useState(false)
+  const cleanNumber = COMPANY_INFO.whatsappPlaceholder.replace(/[^0-9]/g, "")
   const defaultMessage = encodeURIComponent(
-    'Hello Any Time Mavu team, I would like to inquire about your commercial batter dispensing machine.'
-  );
+    "Hello ANY TIME MAAVU team, I would like to inquire about your batter dispensing and packaging machine.",
+  )
 
   return (
     <div className="fixed bottom-6 right-6 z-40 flex items-center gap-3">
       {/* Tooltip Label */}
       <div
-        className={`hidden sm:flex items-center gap-2 bg-white text-[#072C2E] px-4 py-2 rounded-full shadow-xl border border-[#25D36644] text-xs font-bold transition-all duration-300 pointer-events-none ${
-          hovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2'
+        className={`hidden sm:flex items-center gap-2 bg-white text-[#1E0412] px-4 py-2 rounded-full shadow-xl border border-[#25D36644] text-xs font-bold transition-all duration-300 pointer-events-none ${
+          hovered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"
         }`}
       >
         <span className="w-2 h-2 rounded-full bg-[#25D366] animate-ping" />
@@ -36,5 +36,5 @@ export function WhatsAppFloating() {
         <IconWhatsApp size={28} />
       </a>
     </div>
-  );
+  )
 }

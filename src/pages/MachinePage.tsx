@@ -1,105 +1,169 @@
-import React from 'react';
-import { SectionHeading } from '../components/common/SectionHeading';
-import { Button } from '../components/common/Button';
-import { MachineViewer } from '../components/ui/MachineViewer';
-import { SpecTable } from '../components/cards/SpecTable';
-import { ComparisonCard } from '../components/cards/ComparisonCard';
-import { IconCheck } from '../components/common/Icons';
+import React from "react"
+import { SectionHeading } from "../components/common/SectionHeading"
+import { Button } from "../components/common/Button"
+import { MachineViewer } from "../components/ui/MachineViewer"
+import { SpecTable } from "../components/cards/SpecTable"
+import { ComparisonCard } from "../components/cards/ComparisonCard"
+import { IconCheck } from "../components/common/Icons"
 
 interface MachinePageProps {
-  onNavigate: (path: string) => void;
+  onNavigate: (path: string) => void
 }
 
 export function MachinePage({ onNavigate }: MachinePageProps) {
-  const assemblies = [
+  const coreFeatures = [
     {
-      title: 'Aseptic Sealed Hopper',
-      material: 'Food-Grade 304 Stainless Steel',
-      desc: 'Designed with seamless sanitary welding to prevent batter bacterial buildup. Removable airtight lid preserves ambient temperature and natural fermentation.',
+      title: "Accurate Dispensing",
+      desc: "Dispense consistent quantities with better control and reduced wastage.",
     },
     {
-      title: 'Precision Volumetric Valve',
-      material: 'Sanitary Dual-Seal Positive Displacement',
-      desc: 'Accurately portions predetermined volumes from 40ml to 180ml with clean, instant cut-off. Zero dripping or messy stringing onto burner griddles.',
+      title: "Hygienic Packaging",
+      desc: "Minimize manual handling and maintain a cleaner packaging process.",
     },
     {
-      title: 'Single-Touch Control Interface',
-      material: 'Heavy-Duty Commercial Grade Selector',
-      desc: 'Simple rotary preset dial lets chefs instantly toggle between portion sizes for mini idlis, regular idlis, and large roast dosas.',
+      title: "Fast & Convenient",
+      desc: "Speed up the process of preparing customer orders.",
     },
     {
-      title: 'Vibration-Damped Commercial Chassis',
-      material: 'Reinforced SS304 with Non-Slip Rubber Feet',
-      desc: 'Engineered for steady operation alongside blistering hot commercial griddles, steam boilers, and stainless steel counter tables.',
+      title: "Consistent Portions",
+      desc: "Deliver standardized quantities for every customer.",
     },
-  ];
+    {
+      title: "Easy Operation",
+      desc: "Designed for simple, practical day-to-day operation.",
+    },
+    {
+      title: "Built to Scale",
+      desc: "Suitable for batter businesses looking to improve their retail and distribution process.",
+    },
+  ]
+
+  const machineFeatures = [
+    {
+      title: "Precision Dispensing",
+      desc: "Accurately portions predetermined volumes with clean, instant cut-off.",
+    },
+    {
+      title: "Quantity Control",
+      desc: "Easily select portion presets for varied retail customer needs.",
+    },
+    {
+      title: "Hygienic Batter Handling",
+      desc: "Enclosed sanitary chamber protects batter from airborne contaminants.",
+    },
+    {
+      title: "Automated Filling",
+      desc: "Clean volumetric filling directly into packaging pouches or containers.",
+    },
+    {
+      title: "Packaging Integration",
+      desc: "Fits seamlessly into standard retail packaging counters and production tables.",
+    },
+    {
+      title: "Easy Operator Interface",
+      desc: "Simple control interface that any staff member can master in minutes.",
+    },
+    {
+      title: "Compact Commercial Design",
+      desc: "Space-saving footprint engineered for maximum counter efficiency.",
+    },
+    {
+      title: "Reduced Manual Handling",
+      desc: "Eliminates messy ladles, hand-held scoops, and counter wipes.",
+    },
+    {
+      title: "Faster Customer Service",
+      desc: "Serves retail walk-ins rapidly with standardized speed.",
+    },
+    {
+      title: "Consistent Output",
+      desc: "Ensures uniform weight and volume across every customer order.",
+    },
+  ]
 
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="bg-gradient-to-br from-[#072C2E] via-[#0D4B4F] to-[#072C2E] py-20 lg:py-24 text-white text-center">
+      <section className="bg-gradient-to-br from-[#1E0412] via-[#9B0E4E] to-[#1E0412] py-20 lg:py-24 text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8B84A1A] border border-[#E8B84A44] text-[#E8B84A] text-xs font-bold tracking-widest uppercase">
-            PRODUCT ARCHITECTURE & ENGINEERING
+            PRODUCT ARCHITECTURE & AUTOMATION
           </div>
           <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight">
-            OUR BATTER DISPENSING MACHINE
+            BATTER DISPENSING & PACKAGING MACHINE
           </h1>
+          <p className="text-xl sm:text-2xl text-[#E8B84A] font-display font-bold">
+            One Machine. A Smarter Way to Sell Batter.
+          </p>
           <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-body max-w-2xl mx-auto">
-            A purpose-built commercial system engineered for relentless daily food service, strict hygiene compliance, and standardized portion accuracy.
+            Our automated batter dispensing system is designed to accurately
+            dispense prepared batter and package it into customer-ready
+            quantities. It brings consistency, hygiene and efficiency to the
+            batter-selling process.
           </p>
         </div>
       </section>
 
-      {/* Interactive Machine Showcase */}
-      <section className="bg-white py-16 lg:py-24 border-b border-[#E8DFC8]">
+      {/* 6 Core Product Value Cards */}
+      <section className="bg-white py-16 lg:py-24 border-b border-[#E5C2CC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            kicker="Interactive Breakdown"
-            title="EXPLORE THE SYSTEM COMPONENTS"
-            subtitle="Click on the interactive markers to inspect the engineering highlights built into every Any Time Mavu unit."
+            kicker="Core Strengths"
+            title="KEY MACHINE CAPABILITIES"
+            subtitle="Engineered to solve the fundamental challenges of manual batter measuring, portioning, and retail packaging."
           />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {coreFeatures.map((feat, idx) => (
+              <div
+                key={idx}
+                className="p-6 rounded-2xl bg-[#FCF0F3] border border-[#E5C2CC] flex flex-col justify-between hover:-translate-y-1.5 hover:border-[#E8B84A] hover:shadow-lg transition-all duration-300"
+              >
+                <div>
+                  <div className="w-10 h-10 rounded-lg bg-[#9B0E4E] text-[#E8B84A] flex items-center justify-center font-display font-black text-sm mb-4">
+                    0{idx + 1}
+                  </div>
+                  <h3 className="font-display font-bold text-lg text-[#1E0412] mb-2">
+                    {feat.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#6E4955] leading-relaxed font-body">
+                    {feat.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
           <MachineViewer />
         </div>
       </section>
 
-      {/* Sub-Assembly Deep Dive */}
-      <section className="bg-[#F6F0E5] py-20 lg:py-28">
+      {/* 10 Feature List: Designed Around the Way Batter Businesses Work */}
+      <section className="bg-[#F7E8EC] py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             theme="cream"
-            kicker="Sanitary Construction"
-            title="PRECISION FOOD-TECH ASSEMBLIES"
-            subtitle="Every component is crafted from certified food-safe materials designed for continuous commercial kitchen duty."
+            kicker="Commercial Engineering"
+            title="DESIGNED AROUND THE WAY BATTER BUSINESSES WORK"
+            subtitle="Built to handle continuous commercial operations with reliable food-grade components."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {assemblies.map((assembly, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {machineFeatures.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-8 border border-[#E8DFC8] shadow-sm flex flex-col justify-between"
+                className="bg-white rounded-2xl p-5 border border-[#E5C2CC] shadow-sm flex flex-col justify-between hover:border-[#E8B84A] transition-colors"
               >
                 <div>
-                  <div className="flex items-center justify-between gap-4 mb-4 pb-3 border-b border-[#F6F0E5]">
-                    <span className="font-display font-extrabold text-lg text-[#072C2E]">
-                      {assembly.title}
-                    </span>
-                    <span className="text-[10px] font-bold text-[#E8B84A] uppercase bg-[#E8B84A1A] px-2.5 py-1 rounded border border-[#E8B84A33]">
-                      SS304 GRADE
-                    </span>
-                  </div>
-
-                  <p className="text-xs font-semibold text-[#0D4B4F] mb-2 uppercase tracking-wide">
-                    {assembly.material}
+                  <span className="w-7 h-7 rounded-lg bg-[#FCF0F3] text-[#9B0E4E] flex items-center justify-center font-bold text-xs mb-3 border border-[#E5C2CC]">
+                    ✓
+                  </span>
+                  <h4 className="font-display font-bold text-sm text-[#1E0412] mb-1.5">
+                    {item.title}
+                  </h4>
+                  <p className="text-xs text-[#6E4955] leading-relaxed font-body">
+                    {item.desc}
                   </p>
-
-                  <p className="text-xs sm:text-sm text-[#566E70] leading-relaxed font-body">
-                    {assembly.desc}
-                  </p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-[#F6F0E5] flex items-center gap-2 text-xs text-[#0D4B4F] font-semibold">
-                  <IconCheck size={16} /> Certified Commercial Kitchen Spec
                 </div>
               </div>
             ))}
@@ -108,37 +172,42 @@ export function MachinePage({ onNavigate }: MachinePageProps) {
       </section>
 
       {/* Technical Specifications */}
-      <section className="bg-white py-20 lg:py-28 border-b border-[#E8DFC8]">
+      <section className="bg-white py-20 lg:py-28 border-b border-[#E5C2CC]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             kicker="Full Spec Sheet"
             title="TECHNICAL SPECIFICATIONS"
-            subtitle="Official engineering dimensions, power specifications, and operational parameters for kitchen layout planning."
+            subtitle="Standard engineering dimensions, power parameters, and materials for commercial planning."
           />
 
-          <SpecTable onRequestSpecSheet={() => onNavigate('/contact')} />
+          <SpecTable onRequestSpecSheet={() => onNavigate("/contact")} />
         </div>
       </section>
 
       {/* Benefits Comparison */}
-      <section className="bg-[#072C2E] py-20 lg:py-28 text-white">
+      <section className="bg-[#1E0412] py-20 lg:py-28 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             theme="dark"
             kicker="Why Upgrade"
-            title="THE MEASURABLE VALUE OF ACCURACY"
-            subtitle="Compare manual scooping against precision automated dispensing."
+            title="THE VALUE OF AUTOMATED DISPENSING & PACKAGING"
+            subtitle="Compare manual measuring and ladle packing against ANY TIME MAAVU automation."
           />
 
           <ComparisonCard />
 
           <div className="text-center mt-12">
-            <Button variant="primary" size="lg" onClick={() => onNavigate('/contact')} withArrow>
-              Request Commercial Pricing
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={() => onNavigate("/contact")}
+              withArrow
+            >
+              Talk to Our Team
             </Button>
           </div>
         </div>
       </section>
     </div>
-  );
+  )
 }
